@@ -1,0 +1,36 @@
+nav {
+  height: 3.5em;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  #nav-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    a {
+      font-size: 1.1em;
+      display: inline-block;
+      color: #000;
+      padding: .5em;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .nav-logo {
+      height: 3.5em;
+      width: 4em;
+      margin: 0 auto;
+
+      img {
+        display: block;
+        width: 76%;
+        margin: auto;
+        padding-top: .1em;
+      }
+    }
+
+  }
+}

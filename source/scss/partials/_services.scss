@@ -1,0 +1,28 @@
+#services {
+  width: 100%;
+  .service-item {
+    display: inline-block;
+    margin-top: 1.5em;
+    width: 100%;
+    figure {
+      margin:0 auto;
+      display: inline-block;
+      width: 90%;
+      max-width: 600px;
+      img {
+        width: 100%;
+      }
+      h2, p {
+        color: #979797;
+        font-weight: bold;
+        line-height: 1.4em;
+        margin: .5em 0;
+      }
+    }
+  }
+  .bottom-border {
+    border-bottom: 1px solid #979797;
+    width: 90%;
+    margin: 2.5em auto;
+  }
+}

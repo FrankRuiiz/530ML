@@ -1,0 +1,60 @@
+#contact {
+  margin-bottom: 50px;
+  .contact-left {
+    padding: 0 .5em;
+    .logo {
+      height: 3em;
+      img {
+        height: 100%;
+      }
+    }
+    address {
+      margin-top: .75em;
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 0.85em;
+      font-weight: bold;
+      line-height: 1.4em;
+      span:last-child {
+        margin-left: 1.5em;
+      }
+    }
+  }
+
+  .contact-right {
+    padding: 0 .5em;
+    margin-top: 2em;
+    p {
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 0.85em;
+      font-weight: bold;
+      line-height: 1.4em;
+    }
+    .sign-up {
+      margin-top: 1em;
+      input {
+        border: none;
+        border-radius: 5px;
+        background-color: #eee;
+        padding: .75em;
+        width: 150px;
+        text-transform: uppercase;
+        font-size: 0.75em;
+        font-weight: bold;
+      }
+
+      button {
+        border: none;
+        background-color: #999;
+        padding: .75em 1.5em;
+        border-radius: 5px;
+        font-size: 0.75em;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #eee;
+        margin-left: .5em;
+      }
+    }
+  }
+}
