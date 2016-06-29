@@ -68,16 +68,32 @@
       .contact-container {
         width: 100%;
         max-width: none;
-        .contact-col {
-          display: inline-block;
-          width: 30%;
-          padding: 0;
-          margin-right: 4%;
-        }
 
+        .contact-col:nth-child(odd) {
+          display: inline-block;
+          width: 40%;
+          padding: 0;
+        }
+        .contact-col:nth-child(even) {
+          display: inline-block;
+          width: 18%;
+          padding: 0;
+        }
         .contact-col:nth-child(3) {
+          box-sizing: border-box;
           margin-right: 0;
+          padding-left: 9%;
         }
       }
     }
+}
+
+@media (min-width: 1200px) {
+  #contact {
+    .contact-container {
+      .contact-col:nth-child(3) {
+        padding-left: 15%;
+      }
+    }
+  }
 }
