@@ -1,60 +1,83 @@
 #contact {
   margin-bottom: 50px;
-  .contact-left {
-    padding: 0 .5em;
-    .logo {
-      height: 3em;
-      img {
-        height: 100%;
+  .contact-container {
+    max-width: 350px;
+    margin: 0 auto;
+    .contact-left {
+      padding: 0 .5em;
+      .logo {
+        height: 3em;
+        img {
+          height: 100%;
+        }
+      }
+      address {
+        margin-top: .75em;
+        text-transform: uppercase;
+        font-style: normal;
+        font-size: 0.85em;
+        font-weight: bold;
+        line-height: 1.4em;
+        span:last-child {
+          margin-left: 1.5em;
+        }
       }
     }
-    address {
-      margin-top: .75em;
-      text-transform: uppercase;
-      font-style: normal;
-      font-size: 0.85em;
-      font-weight: bold;
-      line-height: 1.4em;
-      span:last-child {
-        margin-left: 1.5em;
+
+    .contact-right {
+      padding: 0 .5em;
+      margin-top: 2em;
+      p {
+        text-transform: uppercase;
+        font-style: normal;
+        font-size: 0.75em;
+        font-weight: bold;
+        line-height: 1.4em;
+      }
+      .sign-up {
+        margin-top: 1em;
+        input {
+          border: none;
+          border-radius: 5px;
+          background-color: #eee;
+          padding: .75em;
+          width: 150px;
+          text-transform: uppercase;
+          font-size: 0.75em;
+          font-weight: bold;
+        }
+
+        button {
+          border: none;
+          background-color: #999;
+          padding: .75em 1.5em;
+          border-radius: 5px;
+          font-size: 0.75em;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: #eee;
+          margin-left: .5em;
+        }
       }
     }
   }
+}
 
-  .contact-right {
-    padding: 0 .5em;
-    margin-top: 2em;
-    p {
-      text-transform: uppercase;
-      font-style: normal;
-      font-size: 0.85em;
-      font-weight: bold;
-      line-height: 1.4em;
-    }
-    .sign-up {
-      margin-top: 1em;
-      input {
-        border: none;
-        border-radius: 5px;
-        background-color: #eee;
-        padding: .75em;
-        width: 150px;
-        text-transform: uppercase;
-        font-size: 0.75em;
-        font-weight: bold;
-      }
+@media (min-width: 960px) {
+    #contact {
+      .contact-container {
+        width: 100%;
+        max-width: none;
+        .contact-col {
+          display: inline-block;
+          width: 30%;
+          padding: 0;
+          margin-right: 4%;
+        }
 
-      button {
-        border: none;
-        background-color: #999;
-        padding: .75em 1.5em;
-        border-radius: 5px;
-        font-size: 0.75em;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: #eee;
-        margin-left: .5em;
+        .contact-col:nth-child(3) {
+          margin-right: 0;
+        }
       }
     }
-  }
 }

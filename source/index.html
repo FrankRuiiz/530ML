@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="wrapper">
+     <div id="page-wrapper">
         <!--Navigation-->
         <nav>
             <div id="nav-container">
@@ -23,14 +23,31 @@
                 <div class="nav-logo">
                     <img src="images/530_logo.jpg" alt="530 Media Lab Logo">
                 </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>who we are</li>
+                        <li>what we do</li>
+                        <li>news</li>
+                        <li>connect</li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!--End Navigation-->
 
         <!--Hero section-->
         <section id="hero">
-            <div class="hero-image">
+            <div class="hero-image .headerBg">
                 <img src="images/Homepage_Hero_1.jpg" alt="Image of brick tiles">
+                <div class="content-container">
+                    <div class="desktop-content">
+                        <h1>An Engineering Quality Control and Quality Assurance Company</h1>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem </p>
+                        <div class="desktop-call-to-action">
+                            <p>learn what we can do for you</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="mobile-content text-center">
                 <h1>An Engineering Quality Control and Quality Assurance Company</h1>
@@ -41,72 +58,79 @@
             </div>
         </section>
         <!--End Hero Section-->
-
-        <!--Services Section-->
-        <section id="services">
-            <article class="service-item text-center">
-                <figure>
-                    <img src="images/img_1.png" alt="Demolition services">
-                    <figcaption>
-                        <h2>Neque porro quisquam est qui dolorem quisquam</h2>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem </p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article class="service-item text-center">
-                <figure>
-                    <img src="images/img_2.png" alt="Demolition services">
-                    <figcaption>
-                        <h2>Neque porro quisquam est qui dolorem quisquam</h2>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem </p>
-                    </figcaption>
-                </figure>
-            </article>
-            <article class="service-item text-center">
-                <figure>
-                    <img src="images/img_3.png" alt="Demolition services">
-                    <figcaption>
-                        <h2>Neque porro quisquam est qui dolorem quisquam</h2>
-                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem </p>
-                    </figcaption>
-                </figure>
-            </article>
-            <div class="bottom-border"></div>
-        </section>
-        <!--End Services Section-->
-        <!--Contact Section-->
-        <section id="contact">
-            <div class="contact-left">
-                <div class="logo">
-                    <img src="images/530_logo.jpg" alt="530 Media Lab Logo">
+        <div id="content-container">
+            <!--Services Section-->
+            <section id="services">
+                <article class="service-item text-center">
+                    <figure>
+                        <img src="images/img_1.png" alt="Demolition services">
+                        <figcaption>
+                            <p class="green-link">project-profile</p>
+                            <h2>Neque porro quisquam est qui dolorem quisquam</h2>
+                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="service-item text-center">
+                    <figure>
+                        <img src="images/img_2.png" alt="Demolition services">
+                        <figcaption>
+                            <p class="green-link">news</p>
+                            <h2>Neque porro quisquam est qui dolorem quisquam</h2>
+                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="service-item text-center">
+                    <figure>
+                        <img src="images/img_3.png" alt="Demolition services">
+                        <figcaption>
+                            <p class="green-link">services</p>
+                            <h2>Neque porro quisquam est qui dolorem quisquam</h2>
+                            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Neque porro quisquam est qui dolorem </p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <div class="bottom-border"></div>
+            </section>
+            <!--End Services Section-->
+            <!--Contact Section-->
+            <section id="contact">
+                <div class="contact-container">
+                    <div class="contact-left contact-col">
+                        <div class="logo">
+                            <img src="images/530_logo.jpg" alt="530 Media Lab Logo">
+                        </div>
+                        <address>
+                            13850 cerritos corporate drive unit e <br>
+                            cerritos, ca 90703 <br>
+                            <span>office | 562.321.9840</span><span>fax | 562.321.9840</span>
+                        </address>
+                    </div>
+                    <div class="contact-col"></div>
+                    <div class="contact-right contact-col">
+                        <p>join our mailing list</p>
+                        <div class="sign-up">
+                            <input type="text" placeholder="your email address">
+                            <button>sign-up</button>
+                        </div>
+                    </div>
                 </div>
-                <address>
-                    13850 cerritos corporate drive unit e <br>
-                    cerritos, ca 90703 <br>
-                    <span>office | 562.321.9840</span><span>fax | 562.321.9840</span>
-                </address>
-            </div>
-            <div class="contact-right">
-                <p>join our mailing list</p>
-                <div class="sign-up">
-                    <input type="text" placeholder="your email address">
-                    <button>sign-up</button>
-                </div>
-            </div>
-        </section>
-        <!--End Contact Section-->
-        <!--Footer-->
-        <footer>
-            <ul class="social-icons">
-                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                <li><i class="fa fa-vimeo-square" aria-hidden="true"></i></li>
-                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-            </ul>
-            <p>copyright 2015 530medialab</p>
-        </footer>
-        <!--End Footer-->
-    </div>
+            </section>
+            <!--End Contact Section-->
+            <!--Footer-->
+            <footer>
+                <ul class="social-icons">
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-vimeo-square" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                </ul>
+                <p>copyright 2015 530medialab</p>
+            </footer>
+            <!--End Footer-->
+        </div>
+     </div>
 </body>
 </html>
