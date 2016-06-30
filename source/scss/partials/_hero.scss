@@ -90,3 +90,14 @@
     }
   }
 }
+
+@media (min-width: 960px) {
+  #hero {
+    margin-top: 4.5em;
+    .content-container {
+      .desktop-content {
+        width: 50%;
+      }
+    }
+  }
+}

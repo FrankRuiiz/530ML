@@ -16,6 +16,9 @@ body {
   margin: 0 auto;
 }
 
+#content-container {
+  padding: 0 .5em;
+}
 
 @media (min-width: 768px) {
   #content-container {

@@ -11,6 +11,9 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
+#content-container {
+  padding: 0 .5em; }
+
 @media (min-width: 768px) {
   #content-container {
     max-width: 90%;
@@ -30,11 +33,11 @@ nav {
     position: relative; }
     nav #nav-container .nav-content {
       height: 100%; }
-      nav #nav-container .nav-content a {
-        font-size: 1.1em;
+      nav #nav-container .nav-content .toggle-nav {
+        font-size: 1.2em;
         display: inline-block;
         color: #000;
-        padding: .5em;
+        padding: .65em;
         position: absolute;
         top: 50%;
         transform: translateY(-50%); }
@@ -53,39 +56,40 @@ nav {
         display: none; }
 
 @media (min-width: 768px) {
-  nav {
-    height: 4em; }
-    nav #nav-container {
-      max-width: 1200px;
+  nav #nav-container {
+    max-width: 1200px;
+    margin: 0 auto; }
+    nav #nav-container .nav-content {
+      width: 90%;
       margin: 0 auto; }
-      nav #nav-container .nav-content {
-        width: 90%;
-        margin: 0 auto; }
-        nav #nav-container .nav-content .toggle-nav {
-          display: none; }
-        nav #nav-container .nav-content .nav-logo {
-          margin: 0 0 0 0.5em;
-          display: inline-block;
-          float: left; }
-          nav #nav-container .nav-content .nav-logo img {
-            padding-top: .5em; }
-        nav #nav-container .nav-content .nav-links {
-          display: inline-block;
-          float: left;
+      nav #nav-container .nav-content .toggle-nav {
+        display: none; }
+      nav #nav-container .nav-content .nav-logo {
+        margin: 0 0 0 0.5em;
+        display: inline-block;
+        float: left; }
+        nav #nav-container .nav-content .nav-logo img {
+          padding-top: .5em; }
+      nav #nav-container .nav-content .nav-links {
+        display: inline-block;
+        width: 400px;
+        height: 100%;
+        margin-left: 50px; }
+        nav #nav-container .nav-content .nav-links ul {
           height: 100%;
-          margin-left: 50px; }
-          nav #nav-container .nav-content .nav-links ul {
-            list-style-type: none;
-            height: 100%;
-            margin: 0;
-            padding: 0; }
-            nav #nav-container .nav-content .nav-links ul li {
-              display: inline-block;
-              margin-top: 4em;
-              margin-right: 1em;
+          list-style-type: none;
+          margin: 0;
+          padding: 0; }
+          nav #nav-container .nav-content .nav-links ul li {
+            display: inline-block;
+            margin-top: 2.3em;
+            margin-right: 1em; }
+            nav #nav-container .nav-content .nav-links ul li a {
               text-transform: uppercase;
-              font-size: 0.65em;
-              font-weight: bold; } }
+              font-size: 0.75em;
+              font-weight: bold;
+              text-decoration: none;
+              color: inherit; } }
 
 @media (min-width: 960px) {
   nav {
@@ -96,7 +100,7 @@ nav {
         width: 95%;
         padding-top: .4em; }
     nav #nav-container .nav-content .nav-links ul li {
-      margin-top: 4.5em; }
+      margin-top: 2.8em; }
     nav #nav-container .nav-content .desktop-social {
       height: 100%;
       display: inline-block;
@@ -105,16 +109,23 @@ nav {
       float: right; }
       nav #nav-container .nav-content .desktop-social .social-icons {
         display: inline-block;
+        width: 120px;
+        height: 1.5em;
+        float: right;
         list-style-type: none;
         padding: 0;
-        margin: .65em 0 0 0;
-        width: 100px;
-        float: right; }
+        margin: .65em 0 0 0; }
         nav #nav-container .nav-content .desktop-social .social-icons li {
           display: inline-block;
-          margin-left: .80em;
-          color: #999;
-          font-size: 0.8em; }
+          position: relative;
+          height: 100%;
+          width: 10%;
+          margin-left: 0.75em; }
+          nav #nav-container .nav-content .desktop-social .social-icons li a {
+            padding: 0;
+            display: inline;
+            color: #999;
+            font-size: 0.8em; }
       nav #nav-container .nav-content .desktop-social .search-box {
         display: inline-block;
         width: 200px;
@@ -203,6 +214,12 @@ nav {
   #hero .mobile-content {
     display: none; } }
 
+@media (min-width: 960px) {
+  #hero {
+    margin-top: 4.5em; }
+    #hero .content-container .desktop-content {
+      width: 50%; } }
+
 #services {
   width: 100%; }
   #services .service-item {
@@ -236,39 +253,38 @@ nav {
       width: 100%; }
       #services .service-item figure figcaption .green-link {
         display: block;
-        color: #80c046;
         font-weight: bold;
         text-transform: uppercase;
         font-family: sans-serif;
         font-size: 0.75em;
         margin-top: 1em; }
+        #services .service-item figure figcaption .green-link a {
+          text-decoration: none;
+          color: #80c046; }
   #services .service-item:nth-child(3) {
     margin-right: 0; }
   #services .bottom-border {
     width: 100%; } }
 
 #contact {
-  margin-bottom: 50px; }
+  margin-bottom: 4em; }
   #contact .contact-container {
     max-width: 350px;
     margin: 0 auto; }
-    #contact .contact-container .contact-left {
-      padding: 0 .5em; }
-      #contact .contact-container .contact-left .logo {
-        height: 3em; }
-        #contact .contact-container .contact-left .logo img {
-          height: 100%; }
-      #contact .contact-container .contact-left address {
-        margin-top: .75em;
-        text-transform: uppercase;
-        font-style: normal;
-        font-size: 0.85em;
-        font-weight: bold;
-        line-height: 1.4em; }
-        #contact .contact-container .contact-left address span:last-child {
-          margin-left: 1.5em; }
+    #contact .contact-container .contact-left .logo {
+      height: 3em; }
+      #contact .contact-container .contact-left .logo img {
+        height: 100%; }
+    #contact .contact-container .contact-left address {
+      margin-top: .75em;
+      text-transform: uppercase;
+      font-style: normal;
+      font-size: 0.75em;
+      font-weight: bold;
+      line-height: 1.4em; }
+      #contact .contact-container .contact-left address span:last-child {
+        margin-left: 1.5em; }
     #contact .contact-container .contact-right {
-      padding: 0 .5em;
       margin-top: 2em; }
       #contact .contact-container .contact-right p {
         text-transform: uppercase;
@@ -277,12 +293,12 @@ nav {
         font-weight: bold;
         line-height: 1.4em; }
       #contact .contact-container .contact-right .sign-up {
-        margin-top: 1em; }
+        margin-top: 0.5em; }
         #contact .contact-container .contact-right .sign-up input {
           border: none;
           border-radius: 5px;
           background-color: #eee;
-          padding: .75em;
+          padding: .5em;
           width: 150px;
           text-transform: uppercase;
           font-size: 0.75em;
@@ -290,13 +306,13 @@ nav {
         #contact .contact-container .contact-right .sign-up button {
           border: none;
           background-color: #999;
-          padding: .75em 1.5em;
+          padding: .5em 1.2em;
           border-radius: 5px;
           font-size: 0.75em;
           text-transform: uppercase;
           font-weight: bold;
           color: #eee;
-          margin-left: .5em; }
+          margin-left: .3em; }
 
 @media (min-width: 960px) {
   #contact .contact-container {
@@ -312,26 +328,25 @@ nav {
       padding: 0; }
     #contact .contact-container .contact-col:nth-child(3) {
       box-sizing: border-box;
-      margin-right: 0;
-      padding-left: 9%; } }
+      padding-left: 10.5%; } }
 
 @media (min-width: 1200px) {
   #contact .contact-container .contact-col:nth-child(3) {
     padding-left: 15%; } }
 
 footer {
-  padding: 0 .5em;
   margin-bottom: 5em; }
   footer .social-icons {
     list-style-type: none;
     padding: 0; }
     footer .social-icons li {
       display: inline-block;
-      margin-right: .5em;
-      color: #999;
-      font-size: 1.2em; }
+      margin-right: .5em; }
+      footer .social-icons li a {
+        color: #999;
+        font-size: 1.2em; }
   footer p {
     text-transform: uppercase;
-    font-size: 0.80em;
+    font-size: 0.75em;
     margin: 0;
     font-weight: 400; }
